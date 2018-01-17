@@ -88,6 +88,7 @@ function create() {
 function update() {
   var hitPlatform = game.physics.arcade.collide(player1, platforms);
   var hitPlatform = game.physics.arcade.collide(player2, platforms);
+  var hitPlatform = game.physics.arcade.collide(player1, player2);
   //  Reset the players velocity (movement)
     player1.body.velocity.x = 0;
     if (cursors.left.isDown)
